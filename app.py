@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Load model
-interpreter = tf.lite.Interpreter(model_path="github_waste_model.tflite")
+interpreter = tf.lite.Interpreter(model_path="new2_waste_model.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
